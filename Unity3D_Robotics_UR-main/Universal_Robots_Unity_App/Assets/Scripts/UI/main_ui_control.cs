@@ -84,7 +84,7 @@ public class main_ui_control : MonoBehaviour
         position_j6_txt.text = "0.00";
 
         // Robot IP Address
-        ip_address_txt.text = "192.168.1.14";
+        ip_address_txt.text = "192.168.111.128";
 
         // Auxiliary first command -> Write initialization position/rotation with acceleration/time to the robot controller
         // command (string value)
@@ -198,28 +198,28 @@ public class main_ui_control : MonoBehaviour
     // -------------------- Camera Position -> Right -------------------- //
     public void TaskOnClick_CamViewRBTN()
     {
-        camera_obj.transform.localPosition    = new Vector3(0.114f, 2.64f, -2.564f);
-        camera_obj.transform.localEulerAngles = new Vector3(10f, -30f, 0f);
+        camera_obj.transform.localPosition    = new Vector3(0.120f, 2.90f, -3.1f);
+        camera_obj.transform.localEulerAngles = new Vector3(13.5f, -30f, 0f);
     }
 
     // -------------------- Camera Position -> Left -------------------- //
     public void TaskOnClick_CamViewLBTN()
     {
-        camera_obj.transform.localPosition = new Vector3(-3.114f, 2.64f, -2.564f);
-        camera_obj.transform.localEulerAngles = new Vector3(10f, 30f, 0f);
+        camera_obj.transform.localPosition = new Vector3(-3.114f, 2.90f, -3.1f);
+        camera_obj.transform.localEulerAngles = new Vector3(13.5f, 30f, 0f);
     }
 
     // -------------------- Camera Position -> Home (in front) -------------------- //
     public void TaskOnClick_CamViewHBTN()
     {
-        camera_obj.transform.localPosition = new Vector3(-1.5f, 2.2f, -3.5f);
+        camera_obj.transform.localPosition = new Vector3(-1.5f, 2.2f, -4.5f);
         camera_obj.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
     }
 
     // -------------------- Camera Position -> Top -------------------- //
     public void TaskOnClick_CamViewTBTN()
     {
-        camera_obj.transform.localPosition = new Vector3(-1.2f, 4f, 0f);
+        camera_obj.transform.localPosition = new Vector3(-1.2f, 4.5f, 0f);
         camera_obj.transform.localEulerAngles = new Vector3(90f, 0f, 0f);
     }
 
